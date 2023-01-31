@@ -1,0 +1,21 @@
+{
+  "name": "js-interpreter",
+  "version": "0.1.0",
+  "description": "js-interpreter is developed on the basis of 'https://github.com/NeilFraser/JS-Interpreter'",
+  "main": "src/index.js",
+  "keywords": [
+    "nodejs, js-interpreter"
+  ],
+  "scripts": {
+    "test": "mocha test/*.@(js)",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "bokesoft",
+  "license": "ISC",
+  "private": false,
+  "repository": "git+https://github.com/chenqj1118/js-interpreter.git",
+  "devDependencies": {
+    "webpack": "^5.75.0"
+  }
+}
