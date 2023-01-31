@@ -1,5 +1,5 @@
-global.acorn = require('./acorn');
-const Interpreter = require('./interpreter').Interpreter; // https://github.com/NeilFraser/JS-Interpreter
+global.acorn = require('../original-repo/acorn');
+require('../original-repo/interpreter'); // https://github.com/NeilFraser/JS-Interpreter
 
 /**
  * @caption 执行不被信任的脚本
@@ -11,8 +11,8 @@ const sandboxRunScript = (scriptStr, options) => {
   if (Interpreter) {
     const defaultOpts = {
       log: {
-        log (...msgs) { // 不定个数的参数
-          console.log(...msgs)
+        log (...args) { // 不定个数的参数
+          console.log(...args)
         }
       }
     };

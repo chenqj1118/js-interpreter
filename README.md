@@ -15,8 +15,25 @@ JavaScript中的沙盒JavaScript解释器。在隔离和安全的情况下逐行
 npm i js-interpreter
 ```
 
+```
+// git子模块使用
+git submodule init
+git submodule update
+
+// 或者
+git submodule update --init --recursive
+执行后，子模块目录下就有了源码
+```
+
+```
+// 子模块更新
+进入到子模块目录下，执行 git pull更新，查看git log查看相应提交
+```
+
+
 
 ## API
+
 ```javascript
 sandboxRunScript()
 ```
